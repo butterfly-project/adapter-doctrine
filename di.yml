@@ -1,0 +1,15 @@
+bfy_adapter.doctrine.db_parameters: []
+bfy_adapter.bfy_adapterdoctrine.configuration_paths: []
+
+services:
+
+  bfy_adapter.doctrine.connection:
+    factoryMethod: ['@bfy_adapter.doctrine.entity_manager', 'getConnection']
+
+  bfy_adapter.doctrine.entity_manager:
+    factoryStaticMethod: ['Doctrine\ORM\EntityManager', 'create']
+    arguments: ['%bfy_adapter.doctrine.db_parameters%', '@bfy_adapter.doctrine.setup_configuration']
+
+  bfy_adapter.doctrine.setup_configuration:
+    factoryStaticMethod: ['Doctrine\ORM\Tools\Setup', 'createAnnotationMetadataConfiguration']
+    arguments: ['%bfy_adapter.bfy_adapterdoctrine.configuration_paths%', true, null, null, false]
