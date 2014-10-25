@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+1.0.2
+-----
+
+Changes:
+
+ * Added console helpers
+ * Fix bug for DI configurations
+
 1.0.1
 -----
 
