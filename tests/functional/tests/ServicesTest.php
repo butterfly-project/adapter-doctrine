@@ -16,7 +16,7 @@ class ServicesTest extends BaseDiTest
                 'charset'  => 'UTF8',
             )
             ),
-            array('bfy_adapter.bfy_adapterdoctrine.configuration_paths', array()),
+            array('bfy_adapter.doctrine.configuration_paths', array()),
         );
     }
 
@@ -27,6 +27,11 @@ class ServicesTest extends BaseDiTest
             array('bfy_adapter.doctrine.setup_configuration'),
             array('bfy_adapter.doctrine.entity_manager'),
             array('bfy_adapter.doctrine.connection'),
+
+            // console helpers
+            array('bfy_app.doctrine.helper.entity_manager'),
+            array('bfy_app.doctrine.helper.connection'),
+            array('bfy_app.doctrine.helper.dialog'),
 
             // commands
             array('doctrine.command.run_sql'),
