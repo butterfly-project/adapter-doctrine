@@ -1,0 +1,69 @@
+services:
+
+  doctrine.command.run_sql:
+    class: 'Doctrine\DBAL\Tools\Console\Command\RunSqlCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.import:
+    class: 'Doctrine\DBAL\Tools\Console\Command\ImportCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.metadata:
+    class: 'Doctrine\ORM\Tools\Console\Command\ClearCache\MetadataCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.result:
+    class: 'Doctrine\ORM\Tools\Console\Command\ClearCache\ResultCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.query:
+    class: 'Doctrine\ORM\Tools\Console\Command\ClearCache\QueryCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.create:
+    class: 'Doctrine\ORM\Tools\Console\Command\SchemaTool\CreateCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.update:
+    class: 'Doctrine\ORM\Tools\Console\Command\SchemaTool\UpdateCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.drop:
+    class: 'Doctrine\ORM\Tools\Console\Command\SchemaTool\DropCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.ensure_production_settings:
+    class: 'Doctrine\ORM\Tools\Console\Command\EnsureProductionSettingsCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.convert_doctrine1_schema:
+    class: 'Doctrine\ORM\Tools\Console\Command\ConvertDoctrine1SchemaCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.generate_repositories:
+    class: 'Doctrine\ORM\Tools\Console\Command\GenerateRepositoriesCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.generate_entities:
+    class: 'Doctrine\ORM\Tools\Console\Command\GenerateEntitiesCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.generate_proxies:
+    class: 'Doctrine\ORM\Tools\Console\Command\GenerateProxiesCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.convert_mapping:
+    class: 'Doctrine\ORM\Tools\Console\Command\ConvertMappingCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.run_dql:
+    class: 'Doctrine\ORM\Tools\Console\Command\RunDqlCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.validate_schema:
+    class: 'Doctrine\ORM\Tools\Console\Command\ValidateSchemaCommand'
+    tags:  'bfy_app.sf2_console.commands'
+
+  doctrine.command.info:
+    class: 'Doctrine\ORM\Tools\Console\Command\InfoCommand'
+    tags:  'bfy_app.sf2_console.commands'
