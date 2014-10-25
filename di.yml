@@ -1,5 +1,6 @@
 __import:
   - config/commands.yml
+  - config/console_helpers.yml
 
 bfy_adapter.doctrine.db_parameters:
   driver:   'pdo_mysql'
@@ -8,7 +9,7 @@ bfy_adapter.doctrine.db_parameters:
   dbname:   'dbname'
   charset:  'UTF8'
 
-bfy_adapter.bfy_adapterdoctrine.configuration_paths: []
+bfy_adapter.doctrine.configuration_paths: []
 
 services:
 
@@ -21,4 +22,4 @@ services:
 
   bfy_adapter.doctrine.setup_configuration:
     factoryStaticMethod: ['Doctrine\ORM\Tools\Setup', 'createAnnotationMetadataConfiguration']
-    arguments: ['%bfy_adapter.bfy_adapterdoctrine.configuration_paths%', true, null, null, false]
+    arguments: ['%bfy_adapter.doctrine.configuration_paths%', true, null, null, false]
