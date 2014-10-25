@@ -1,0 +1,24 @@
+{
+    "name": "butterfly/adapter-doctrine",
+    "type": "library",
+    "description": "Butterfly PHP. Doctrine Adapter",
+    "keywords": ["doctrine"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+
+        "doctrine/orm": "2.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Adapter\\Doctrine\\": "src/",
+            "Butterfly\\Adapter\\Doctrine\\Tests\\": "tests/unit/"
+        }
+    }
+}
