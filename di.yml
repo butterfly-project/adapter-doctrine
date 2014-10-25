@@ -1,4 +1,10 @@
-bfy_adapter.doctrine.db_parameters: []
+bfy_adapter.doctrine.db_parameters:
+  driver:   'pdo_mysql'
+  user:     'root'
+  password: ''
+  dbname:   'dbname'
+  charset:  'UTF8'
+
 bfy_adapter.bfy_adapterdoctrine.configuration_paths: []
 
 services:
