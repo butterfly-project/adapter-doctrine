@@ -22,4 +22,4 @@ services:
 
   bfy_adapter.doctrine.setup_configuration:
     factoryStaticMethod: ['Doctrine\ORM\Tools\Setup', 'createAnnotationMetadataConfiguration']
-    arguments: ['%bfy_adapter.bfy_adapterdoctrine.configuration_paths%', true, null, null, false]
+    arguments: ['%bfy_adapter.doctrine.configuration_paths%', true, null, null, false]
