@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.0.4
+-----
+
+Changes:
+
+ * Updated package butterfly/app-sf2-console 
+
 1.0.3
 -----
 
