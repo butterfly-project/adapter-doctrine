@@ -21,5 +21,8 @@
             "Butterfly\\Adapter\\Doctrine\\": "src/",
             "Butterfly\\Adapter\\Doctrine\\Tests\\": "tests/unit/"
         }
+    },
+    "extra": {
+        "priority": 30
     }
 }
