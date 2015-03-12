@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.0.3
+-----
+
+Changes:
+
+ * Set package priority
+
 1.0.2
 -----
 
