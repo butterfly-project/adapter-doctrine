@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.3.3",
 
-        "butterfly/app-sf2-console": "1.0.*",
+        "butterfly/app-sf2-console": "~1.1",
         "doctrine/orm": "2.4.*"
     },
     "autoload": {
