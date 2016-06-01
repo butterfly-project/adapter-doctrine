@@ -1,17 +1,17 @@
 bfy_app.sf2_console.helpers:
-  - [set, [@bfy_app.doctrine.helper.connection, 'db']]
-  - [set, [@bfy_app.doctrine.helper.entity_manager, 'em']]
-  - [set, [@bfy_app.doctrine.helper.dialog, 'dialog']]
+  - ['set', ['@bfy_app.doctrine.helper.connection', 'db']]
+  - ['set', ['@bfy_app.doctrine.helper.entity_manager', 'em']]
+  - ['set', ['@bfy_app.doctrine.helper.dialog', 'dialog']]
 
 services:
 
   bfy_app.doctrine.helper.entity_manager:
     class: 'Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper'
-    arguments: [@bfy_adapter.doctrine.entity_manager]
+    arguments: ['@bfy_adapter.doctrine.entity_manager']
 
   bfy_app.doctrine.helper.connection:
     class: 'Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper'
-    arguments: [@bfy_adapter.doctrine.connection]
+    arguments: ['@bfy_adapter.doctrine.connection']
 
   bfy_app.doctrine.helper.dialog:
     class: 'Symfony\Component\Console\Helper\DialogHelper'
