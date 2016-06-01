@@ -1,6 +1,6 @@
 __import:
-  - config/commands.yml
-  - config/console_helpers.yml
+  - 'config/commands.yml'
+  - 'config/console_helpers.yml'
 
 bfy_adapter.doctrine.db_parameters:
   driver:   'pdo_mysql'

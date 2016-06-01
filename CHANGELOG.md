@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.0.5
+-----
+
+Changes:
+
+ * Fix bug for configuration 
+
 1.0.4
 -----
 
