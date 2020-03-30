@@ -1,7 +1,7 @@
 bfy_app.sf2_console.helpers:
   - ['set', ['@bfy_app.doctrine.helper.connection', 'db']]
   - ['set', ['@bfy_app.doctrine.helper.entity_manager', 'em']]
-  - ['set', ['@bfy_app.doctrine.helper.dialog', 'dialog']]
+  - ['set', ['@bfy_app.doctrine.helper.question', 'question']]
 
 services:
 
@@ -13,5 +13,5 @@ services:
     class: 'Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper'
     arguments: ['@bfy_adapter.doctrine.connection']
 
-  bfy_app.doctrine.helper.dialog:
-    class: 'Symfony\Component\Console\Helper\DialogHelper'
+  bfy_app.doctrine.helper.question:
+    class: 'Symfony\Component\Console\Helper\QuestionHelper'
